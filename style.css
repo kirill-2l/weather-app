@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+}
+body {
+  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.language__list {
+  display: flex;
+  align-items: center;
+}
+.language__item {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.language__item--active {color:#b52b65;}
+.language__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.location, .temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.location {
+  flex-direction: column;
+}
+.location__icon {
+  width: 50%;
+  height: auto;
+}
+
+
+.temperature {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.temperature__degree {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.temperature__degree-num {
+  font-size: 40px;
+}
+.temperature__degree-quantity {
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+.temperature__degree-descr {
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+}
